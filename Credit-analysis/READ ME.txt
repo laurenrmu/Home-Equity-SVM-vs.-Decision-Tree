@@ -1,0 +1,8 @@
+First run preprocess, then either tree and/or Support Vector Machine
+
+preprocess - Loads the data from hmeq. deletes rows with entries missing more than 50% of the data then uses Knn to impute.
+The data is then split into training,testing, and validatoin sets, normalized to [0,1] and saved. 
+
+Support Vector Machine - PCA is preformed on the data. From variance analysis only 6 of the 13 columns are fed to the  SVM. 
+
+Tree - A tree is trained using gini. 
